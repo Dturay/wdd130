@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #14194d;
+    --secondary-color: #1db6d5;
+    --accent-color: #ff7607;
+    --accent-color: #ffffff;
+  }
+
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff7607;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    color: #14194d;
+  }
+
+  .sociallinks a {
+    text-decoration: none;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .hero {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  /* .hero h1 {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero article {
+    position:;
+  } */
+
