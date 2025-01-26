@@ -24,27 +24,51 @@
     margin: auto;
     padding: 20px;
   }
-
+  
   .hero {
     position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .hero img {
-    display: block;
     width: 100%;
-    height: auto;
-    position: absolute;
+    height: 500px; /* Set the height to allocate space for the hero image */
+    overflow: hidden;  /* Ensure no overflow of child elements */
   }
 
-  /* .hero h1 {
+  .hero img:first-of-type {
+    width: 100%; /* Make the hero image fill the container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .hero h1 {
     position: absolute;
+    width: 100%;
+    top: 10%; /* Position of h1 from the top */
     text-align: center;
+    font-size: 28px; /* Font size of h1 */
+    color: white; /* Text color */
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for readability */
   }
 
   .hero article {
-    position:;
-  } */
+    position: absolute;
+    width: 80%;
+    top: 20%; /* Position of the article from the top */
+    margin: 10%;
+    background-color: rgba(81, 109, 235, 0.8); /* Background color with opacity */
+    padding: 20px; /* Padding around the article */
+    border-radius: 10px; /* Rounded corners of the article */
+  }
 
+  .hero article img {
+    max-width: 20%;
+    float: right; /* Float the image to the left for wrapping */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 15px; /* Margin between the image and the paragraph */
+  }
+
+  
+  .hero article p {
+    font-size: 16px; /* Font size for the paragraph */
+    color: #fff; /* Text color */
+  }
