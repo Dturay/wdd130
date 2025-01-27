@@ -5,14 +5,17 @@
     --secondary-accent-color: #ffffff;
   }
 
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
   h1, h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #ff7607;
     font-weight: bold;
   }
 
   p {
-    font-family: 'Roboto', sans-serif;
     color: #14194d;
   }
 
