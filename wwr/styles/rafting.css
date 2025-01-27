@@ -54,11 +54,11 @@
 
   .hero article {
     position: absolute;
-    width: 80%;
+    width: 76%;
     top: 20%; 
     margin: 10%;
     background-color: rgba(81, 109, 235, 0.8); 
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
   }
 
