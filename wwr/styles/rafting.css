@@ -152,6 +152,7 @@ main {
 
 .history section p {
   padding: 10px;
+  background-color: white;
 }
 
 .history section h2 {
@@ -159,7 +160,18 @@ main {
   color: var(--accent-color);
 }
 
-/* Adventure Section */
+/* Adventure-grid Section */
+.adventure-grid {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.adventure-grid h2 {
+  margin-top: 0; /* Remove top margin */
+}
+
 .adventure {
   padding: 20px;
   display: grid;
