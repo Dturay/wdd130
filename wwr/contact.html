@@ -1,94 +1,166 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Added meta charset -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - White Water Rafting</title>
-    <!-- Updated title -->
-    <meta
-      name="description"
-      content="Contact White Water Rafting for inquiries and reservations. We're here to help you with your adventure planning."
-    />
-    <!-- Updated description -->
-    <meta name="author" content="David Turay" />
-    <link rel="stylesheet" href="styles/rafting.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/rafting.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact White Water Rafting for inquiries and reservations. We're here to help you with your adventure planning."
+    />
+    <meta name="author" content="David Turay" />
+    <title>Contact Us - White Water Rafting</title>
   </head>
+
   <body>
     <header>
+      <img src="images/logo.jpeg" alt="Rafting Logo" />
       <nav>
-        <!-- Navigation links go here -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
       </nav>
-      <h1>Contact Us</h1>
-      <!-- Ensured only one h1 is used -->
     </header>
 
-    <div class="hero">
-      <img src="images/heroimg.jpg" alt="Rafting Hero Image" />
-      <div class="hero-overlay"></div>
-      <h1>Contact Us</h1>
-    </div>
-
     <main>
-      <div class="contact-info">
+      <div class="hero">
+        <img src="images/heroimg.jpg" alt="Rafting Hero Image" />
+        <h1>Contact Us</h1>
+      </div>
+
+      <section class="contact-info">
         <h2>Get in Touch</h2>
-        <form action="#" method="post" id="contactForm">
-          <!-- Added id for form -->
+        <p>
+          We would love to hear from you! If you have any questions about our
+          services or need assistance, please contact us using the details below
+          or fill out the form.
+        </p>
+      </section>
+
+      <section class="company-info">
+        <h3>Company Information</h3>
+        <p><strong>Address:</strong> 123 Rafting Lane, River City, ST 12345</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:info@whitewaterrafting.com"
+            >info@whitewaterrafting.com</a
+          >
+        </p>
+
+        <h3>Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="contact-form">
+        <h3>Contact Form</h3>
+        <form
+          action="your_form_processing_script.php"
+          method="post"
+          id="contactForm"
+        >
+          <!-- Added id for the form -->
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required />
+          <input type="email" id="email" name="email" required />
 
-          <label for="phone">Phone:</label>
-          <input type="text" id="phone" name="phone" required />
-
-          <fieldset>
-            <legend>How did you hear about us?</legend>
-            <label for="friend">Friend</label>
-            <input type="radio" id="friend" name="source" value="Friend" />
-
-            <label for="social">Social Media</label>
-            <input
-              type="radio"
-              id="social"
-              name="source"
-              value="Social Media"
-            />
-
-            <label for="search">Search Engine</label>
-            <input
-              type="radio"
-              id="search"
-              name="source"
-              value="Search Engine"
-            />
-          </fieldset>
+          <label>Purpose of Message:</label>
+          <div>
+            <label for="general-inquiry">
+              <input
+                type="radio"
+                id="general-inquiry"
+                name="purpose"
+                value="General Inquiry"
+                required
+              />
+              General Inquiry
+            </label>
+            <label for="reservation-question">
+              <input
+                type="radio"
+                id="reservation-question"
+                name="purpose"
+                value="Reservation Question"
+              />
+              Reservation Question
+            </label>
+            <label for="website-suggestion">
+              <input
+                type="radio"
+                id="website-suggestion"
+                name="purpose"
+                value="Website Suggestion"
+              />
+              Website Suggestion
+            </label>
+          </div>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
 
-          <label for="subscribe">Subscribe to newsletter:</label>
-          <input type="checkbox" id="subscribe" name="subscribe" />
-          <!-- Ensure this element is included -->
+          <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" /> Please
+            subscribe me to the monthly newsletter
+          </label>
 
           <button type="submit">Send Message</button>
           <!-- Updated button text -->
         </form>
-      </div>
+      </section>
+
+      <section class="employee-profiles">
+        <h3>Meet Our Team</h3>
+        <figure>
+          <img src="images/employee1.jpg" alt="Employee 1" />
+          <figcaption>John Doe - Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Employee 2" />
+          <figcaption>Jane Smith - Customer Support</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Employee 3" />
+          <figcaption>Mike Johnson - Instructor</figcaption>
+        </figure>
+      </section>
     </main>
 
     <footer>
-      <p>Copyright © Brigham Young University-Idaho | All rights reserved.</p>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <nav class="sociallinks">
+          <a href="https://facebook.com"
+            ><img src="images/facebook-icon.webp" alt="Facebook Icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="images/twitter-icon.webp" alt="Twitter Icon"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="images/instagram_icon.webp" alt="Instagram Icon"
+          /></a>
+        </nav>
+        <a href="link-to-wireframe-image.png" target="_blank"
+          >View Contact Us Wireframe</a
+        >
+      </div>
     </footer>
-
-    <script src="scripts.js"></script>
-    <!-- Assuming you have a scripts.js file for JS -->
   </body>
 </html>
