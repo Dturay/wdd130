@@ -232,3 +232,145 @@ footer .sociallinks img {
   width: 20px;
   height: 20px;
 }
+
+.contact-info, .company-info, .contact-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+.company-info h3,
+.contact-form h3 {
+  margin: 0 0 15px 0;
+  color: var(--accent-color);
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #14194d;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: var(--secondary-accent-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Employee Profiles Styles */
+.employee-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.employee-profiles figure {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+.contact .hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.contact .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8); /* Dim the hero image for better text visibility */
+}
+
+.contact .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 25, 77, 0.5); /* Semi-transparent overlay with the primary color */
+  z-index: 1; /* Stack on top of the image */
+}
+
+.contact .hero h1 {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  padding: 10px;
+  z-index: 2; /* Ensure text is above the overlay */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* General section styles */
+.contact-info, .company-info, .contact-form {
+  background-color: #ffffff; /* Ensure section background is white */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Background Enhancement for Sections */
+.contact-info,
+.company-info,
+.contact-form,
+.employee-profiles {
+  background-color: rgba(255, 118, 7, 0.03); /* Light accent color for a slight background color */
+}
+
+/* Section Headings */
+.contact-info h2,
+.company-info h3,
+.contact-form h3 {
+  margin: 0 0 15px 0;
+  color: var(--accent-color); /* Use accent color for headings */
+}
+
+/* Button Hover Color */
+.contact-form button:hover {
+  background-color: var(--accent-color); /* Use accent color on button hover for consistency */
+  transition: background-color 0.3s ease;
+}
