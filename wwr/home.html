@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/rafting.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience thrilling white water rafting adventures with us. Join our trips and make unforgettable memories!"
+    />
+    <meta name="author" content="David Turay" />
+    <title>Home - White Water Rafting</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.jpeg" alt="Rafting Logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="home_hero">
+        <img src="images/heroimg.jpg" alt="Rafting Hero Image" />
+        <div class="hero-text">
+          <h1>Adventure Awaits!</h1>
+          <p>Join us for an unforgettable rafting experience!</p>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="your_newsletter_processing_script.php" method="post">
+          <label for="newsletter-name">Name:</label>
+          <input
+            type="text"
+            id="newsletter-name"
+            name="newsletter-name"
+            required
+          />
+
+          <label for="newsletter-email">Email:</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="newsletter-email"
+            required
+          />
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta">
+        <h2>Ready for Adventure?</h2>
+        <p>
+          Join us for our exciting rafting trips and make memories that will
+          last a lifetime!
+        </p>
+        <a class="cta-button" href="trips.html">Explore Our Trips</a>
+      </section>
+
+      <!-- CSS Grid Layout -->
+      <section class="grid-layout">
+        <h2>Our Offerings</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="images/rafting-offer1.jpg" alt="Offer 1" />
+            <h3>Family Rafting Trips</h3>
+            <p>
+              Experience thrilling rafting adventures suitable for the whole
+              family!
+            </p>
+          </div>
+          <div class="grid-item">
+            <img src="images/rafting-offer2.jpg" alt="Offer 2" />
+            <h3>Extreme Rapids</h3>
+            <p>
+              For the adrenaline junkies! Tackle the most exciting rapids with
+              expert guides.
+            </p>
+          </div>
+          <div class="grid-item">
+            <img src="images/rafting-offer3.jpg" alt="Offer 3" />
+            <h3>Guided Tours</h3>
+            <p>
+              Join our guided tours to explore scenic rivers and learn about the
+              area’s wildlife.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>&copy; 2023 White Water Rafting. All Rights Reserved.</p>
+        <nav class="sociallinks">
+          <a href="https://facebook.com"
+            ><img src="images/facebook-icon.webp" alt="Facebook Icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="images/twitter-icon.webp" alt="Twitter Icon"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="images/instagram_icon.webp" alt="Instagram Icon"
+          /></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
